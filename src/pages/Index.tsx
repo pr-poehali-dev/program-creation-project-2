@@ -5,7 +5,7 @@ type Tab = "scan" | "analytics" | "history" | "settings" | "ai";
 
 const API = "https://functions.poehali.dev/73ca70e9-900a-4ead-b257-9b5c483225c1";
 
-const TARGET_ADDRESS = "1LzhS3k3e9Ub8i2W1V8xQFdB8n2MYCHPCa";
+const TARGET_ADDRESS = "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU";
 const PUZZLE_NUM = 71;
 const BATCH_SIZE = 500;
 

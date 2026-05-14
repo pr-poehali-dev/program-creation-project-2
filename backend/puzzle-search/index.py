@@ -11,7 +11,7 @@ import time
 import psycopg2
 import coincurve
 
-TARGET_ADDRESS = "1LzhS3k3e9Ub8i2W1V8xQFdB8n2MYCHPCa"
+TARGET_ADDRESS = "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU"
 RANGE_MIN = 2 ** 70
 RANGE_MAX = 2 ** 71 - 1
 
