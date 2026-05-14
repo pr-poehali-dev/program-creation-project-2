@@ -1,0 +1,38 @@
+{
+  "tests": [
+    {
+      "name": "Start session",
+      "method": "POST",
+      "path": "/?action=start",
+      "body": {"session_id": "test-001"},
+      "expectedStatus": 200,
+      "expectedBody": {"ok": true},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Scan batch of keys",
+      "method": "POST",
+      "path": "/?action=scan",
+      "body": {"session_id": "test-001", "batch": 5},
+      "expectedStatus": 200,
+      "expectedBody": {"found": false},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get stats",
+      "method": "GET",
+      "path": "/?action=stats&session_id=test-001",
+      "expectedStatus": 200,
+      "expectedBody": {"status": "running"},
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Get history",
+      "method": "GET",
+      "path": "/?action=history",
+      "expectedStatus": 200,
+      "expectedBody": {"sessions": []},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
